@@ -13,8 +13,10 @@ export class HomeComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get('http://localhost:5000/posts').subscribe((res: any) => {
-      this.posts = res;
-    });
+    this.http
+      .get('https://image-uploader-backend-ebon.vercel.app/posts')
+      .subscribe((res: any) => {
+        this.posts = res;
+      });
   }
 }

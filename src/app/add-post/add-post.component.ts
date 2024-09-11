@@ -52,15 +52,17 @@ export class AddPostComponent {
     const formData = new FormData();
     formData.append('image', this.selectedFile);
 
-    this.http.post('http://localhost:5000/posts', formData).subscribe(
-      (res) => {
-        alert('Image uploaded successfully!');
-        // Handle success (optional: refresh image gallery or navigate)
-        this.router.navigate(['/']);
-      },
-      (error) => {
-        alert('Error uploading image!');
-      }
-    );
+    this.http
+      .post('https://image-uploader-backend-ebon.vercel.app/posts', formData)
+      .subscribe(
+        (res) => {
+          alert('Image uploaded successfully!');
+          // Handle success (optional: refresh image gallery or navigate)
+          this.router.navigate(['/']);
+        },
+        (error) => {
+          alert('Error uploading image!');
+        }
+      );
   }
 }
