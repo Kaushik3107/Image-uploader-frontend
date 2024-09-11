@@ -1,0 +1,22 @@
+<div class="add-container">
+  <h1 style="margin: 10px">Please Select Image to Upload</h1>
+  <h3>Note: Image should be less than 5MB.</h3>
+  <h3>Image should have file format .jpeg, .png, or .jpg</h3>
+
+  <!-- Dropzone for selecting the image -->
+  <ngx-dropzone (change)="onSelect($event)">
+    <ngx-dropzone-label>Drop image here or click to upload</ngx-dropzone-label>
+  </ngx-dropzone>
+
+  <!-- Display the selected image preview -->
+  <div *ngIf="imagePreview" class="image-preview">
+    <img
+      [src]="imagePreview"
+      alt="Selected Image Preview"
+      class="preview-img"
+    />
+  </div>
+
+  <!-- Button to upload the image -->
+  <button (click)="onSubmit()" class="btn btn-success">Upload Image</button>
+</div>

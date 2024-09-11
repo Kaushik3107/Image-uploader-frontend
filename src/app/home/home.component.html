@@ -1,0 +1,11 @@
+<h1>Welcome To Image Gallery</h1>
+<h2>Collection of Images</h2>
+<div class="gallery-container">
+  <div *ngFor="let post of posts" class="gallery-card">
+    <img
+      [src]="'http://localhost:5000/' + post.imageUrl"
+      class="gallery-image"
+      alt="Post image"
+    />
+  </div>
+</div>

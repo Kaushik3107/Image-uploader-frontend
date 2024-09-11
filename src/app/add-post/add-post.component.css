@@ -1,0 +1,48 @@
+.add-container {
+    margin: 50px 300px;
+  }
+  
+  ngx-dropzone {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  ngx-dropzone-label {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .btn {
+    background-color: #ff4081;
+    color: white;
+    border: 2px solid rgb(219, 36, 66);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 8px;
+  }
+  
+  h1, h3 {
+    margin: 0px;
+    text-align: center;
+    color: #ff4081;
+  }
+  
+  /* Style for the image preview */
+  .image-preview {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .preview-img {
+    max-width: 300px; /* Set a reasonable max width */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
